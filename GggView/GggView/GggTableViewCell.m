@@ -33,7 +33,7 @@
     imgView_.userInteractionEnabled = YES;
     UITapGestureRecognizer *tap =[[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(imgClick:)];
     [imgView_ addGestureRecognizer:tap];
-//
+
     [self addSubview:imgView_];
 
     self.imgView = imgView_;
@@ -59,52 +59,28 @@
     
     self.indexPath = indexPath;
     
-//    _imgView.image = [UIImage imageNamed:[NSString stringWithFormat: model.img]];
-    
-    
+    [_imgView setImage:[UIImage imageNamed:model.img]];
     
     _titleLab.text = model.title;
     
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-//- (void)setCell:(NSDictionary *)dic addIndexPath:(NSIndexPath *)indexPath{
-//
-//    self.indexPath = indexPath;
-//    
-//    _imgView.image = [UIImage imageNamed:dic[@"img"]];
-//    
-//    _titleLab.text = dic[@"title"];
-//
-//}
-
 - (void)imgClick:(UITapGestureRecognizer *)tap{
 
-//    UIImageView *tapView = (UIImageView *)tap.view;
-//
-//    SDPhotoBrowser *photo = [SDPhotoBrowser new];
-//    
-//    photo.imageCount = _dataSource.count;
-//    photo.delegate = self;
-//    
-//    photo.currentImageIndex = tapView.tag;
-//    
-//    photo.sourceImagesContainerView = self;
-//    
-//    [photo show];
+    UIImageView *tapView = (UIImageView *)tap.view;
+
+    SDPhotoBrowser *photo = [SDPhotoBrowser new];
+    
+    photo.imageCount = _dataSource.count;
+    
+    photo.delegate = self;
+    
+    photo.currentImageIndex = tapView.tag;
+    
+    photo.sourceImagesContainerView = self;
+    
+    [photo show];
 
 
 

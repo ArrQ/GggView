@@ -16,8 +16,6 @@
 
 @property(nonatomic,strong) NSArray *dataSource;
 
-//- (void)setCell:(NSDictionary *)dic addIndexPath:(NSIndexPath *)indexPath;
-
 - (void)setCell:(Model *)model addIndexPath:(NSIndexPath *)indexPath;
 
 

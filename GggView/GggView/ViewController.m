@@ -103,8 +103,9 @@
         
     }
     
-//    NSDictionary *dic = self.dataArray[indexPath.row];
-    Model *model = self.dataArray[indexPath.row];
+    NSDictionary *dic = self.dataArray[indexPath.row];
+    
+    Model *model = [[Model alloc]initWithDic:dic];
 
     [homeCell_000 setCell:model addIndexPath:indexPath];
     
