@@ -91,19 +91,14 @@
 
 - (UIImage *)photoBrowser:(SDPhotoBrowser *)browser placeholderImageForIndex:(NSInteger)index{
 
-
     UIImageView *img = self.subviews[index];
     
-    
     return img.image;
-
-
 
 }
 
 
 - (NSURL *)photoBrowser:(SDPhotoBrowser *)browser highQualityImageURLForIndex:(NSInteger)index{
-
 
     NSString *str = self.dataSource[index];
 
