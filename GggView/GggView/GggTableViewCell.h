@@ -14,7 +14,7 @@
 @property(nonatomic,strong) UILabel *titleLab;
 @property(nonatomic,strong) NSIndexPath *indexPath;
 
-@property(nonatomic,strong) NSArray *dataSource;
+@property(nonatomic,strong) NSMutableArray *dataSource;
 
 - (void)setCell:(Model *)model addIndexPath:(NSIndexPath *)indexPath;
 

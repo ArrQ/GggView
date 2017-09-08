@@ -59,6 +59,8 @@
     
     self.indexPath = indexPath;
     
+    [self.dataSource addObject:model.img];
+    
     [_imgView setImage:[UIImage imageNamed:model.img]];
     
     _titleLab.text = model.title;
